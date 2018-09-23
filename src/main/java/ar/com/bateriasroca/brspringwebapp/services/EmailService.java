@@ -1,10 +1,9 @@
 package ar.com.bateriasroca.brspringwebapp.services;
 
-import org.springframework.stereotype.Component;
+
+import org.springframework.mail.javamail.JavaMailSender;
 
 
-public interface EmailService {
-
-    void sendEmail(String[] parameters);
+public interface EmailService extends JavaMailSender{
 
 }
