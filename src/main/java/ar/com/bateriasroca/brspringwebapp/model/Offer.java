@@ -38,4 +38,17 @@ public class Offer {
     public void setBattery(Battery battery) {
         this.battery = battery;
     }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("price " + getPrice() + "\n");
+        sb.append("battery:" + "\n");
+        sb.append("\t brand: " + getBattery().getBrand() + "\n");
+        sb.append("\t model: " + getBattery().getModel() + "\n");
+        sb.append("\t description: " + getBattery().getDescription() + "\n");
+        sb.append("\t capacity: " + getBattery().getCapacity() + "\n");
+
+        return sb.toString();
+    }
 }
