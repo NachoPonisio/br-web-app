@@ -16,15 +16,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <!-- For Testimonials slider -->
-<link rel="stylesheet" th:href="@{/css/flexslider.css}" type="text/css" media="all" />
+<link rel="stylesheet" href="static/css/flexslider.css" type="text/css" media="all" />
 <!-- //For Testimonials slider -->
 <!-- //custom-theme files-->
-<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" media="all" />
-<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- //custom-theme files-->
 
 <!-- font-awesome-icons -->
-<link th:href="@{/css/font-awesome.css}" rel="stylesheet">
+<link href="static/css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
 <!-- googlefonts -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
@@ -65,9 +65,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<nav class="navbar navbar-default">
 						<h1><a class="navbar-brand" href="index.html">
 								<span class="navbar-brand">
-									<img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Baterías Roca
+									<img class="img-logo" src="static/images/roca-logo.png" alt=""/> | Baterías Roca
 								</span>
 							</a>
+							<div class="navbar-brand">
+								<div id="navbar-brand"></div>
+									<p>Desde 1974, a su servicio.</p>
+							</div>
 						</h1>
 							<div class="navbar-header navbar-left">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"/>
@@ -100,13 +104,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 		<!-- //Top-Bar -->
-		<!-- w3-banner -->
-			<div class="w3-banner">
-				<div id="typer"></div>
-					<p>Desde 1983, a su servicio.</p>
-			</div>
-
-		<!-- //w3-banner -->
 	</div>
 </div>
 <!-- //banner -->
@@ -114,7 +111,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="about">
 		<div class="container">
 
-			<h2 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Bienvenido
+			<h2 class="w3l-titles"><img class="img-logo" src="static/images/roca-logo.png" alt=""/> | Bienvenido
 			</h2>
 
 			<div class="w3l-about-grids">
@@ -164,7 +161,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="services-bottom stats services">
 	<div class="banner-dott1">
 		<div class="container">
-			<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Visítenos</h3>
+			<h3 class="w3l-titles"><img class="img-logo" src="static/images/roca-logo.png" alt=""/> | Visítenos</h3>
 			<div class="w3l-map">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7816.508882196286!2d-58.50668114203188!3d-34.5424855231035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb729ed78cc7b%3A0x9a5ae7b2eeaa61e9!2sBaterias+Roca!5e0!3m2!1sen!2sar!4v1537655964969" width="800" height="600" frameborder="0" allowfullscreen></iframe>
 			</div>
@@ -176,30 +173,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- advantages -->
 	<div class="two-grids">
 		<div class="container">
-			<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Nuestras Marcas</h3>
+			<h3 class="w3l-titles"><img class="img-logo" src="static/images/roca-logo.png" alt=""/> | Nuestras Marcas</h3>
 				<section class="slider">
 					<div class="flexslider">
 						<ul class="slides">
 							<li>
-								<img th:src="@{/images/mateo-logo.jpg}" alt="" />
+								<img src="static/images/mateo-logo.jpg" alt="" />
 							</li>
 							<li>
-								<img th:src="@{/images/ACDelco-700.png}" alt="" />
+								<img src="static/images/ACDelco-700.png" alt="" />
 							</li>
 							<li>
-								<img th:src="@{/images/autobat-360.png}" alt="" />
+								<img src="static/images/autobat-360.png" alt="" />
 							</li>
 							<li>
-								<img th:src="@{/images/moura-300.png}" alt="" />
+								<img src="static/images/moura-300.png" alt="" />
 							</li>
 							<li>
-								<img th:src="@{/images/willard-200.jpg}" alt="" />
+								<img src="static/images/willard-200.jpg" alt="" />
 							</li>
 							<li>
-								<img th:src="@{/images/sermat-250.png}" alt="" />
+								<img src="static/images/sermat-250.png" alt="" />
 							</li>
 							<li>
-								<img th:src="@{/images/varta-2000.png}" alt="" />
+								<img src="static/images/varta-2000.png" alt="" />
 							</li>
 						</ul>
 					</div>
@@ -211,7 +208,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Clients -->
 <div class="offers">
 	<div class="banner-dott1">
-	<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Ofertas destacadas</h3>
+	<h3 class="w3l-titles"><img class="img-logo" src="static/images/roca-logo.png" alt=""/> | Ofertas destacadas</h3>
 		<div class="container">
 			<!-- <h4>What Our Customers Say</h4>
 			<section class="slider">
@@ -311,15 +308,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <!-- //bootstrap-modal-pop-up -->
 <!-- js -->
-	<script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
+	<script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
 	<!-- for bootstrap working -->
-	<script th:src="@{/js/bootstrap.js}"></script>
+	<script src="static/js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 <!-- //js -->
 <!-- //here starts scrolling icon -->
-<script th:src="@{/js/SmoothScroll.min.js}"></script>
-	<script type="text/javascript" th:src="@{/js/move-top.js}"></script>
-	<script type="text/javascript" th:src="@{/js/easing.js}"></script>
+<script src="static/js/SmoothScroll.min.js"></script>
+	<script type="text/javascript" src="static/js/move-top.js"></script>
+	<script type="text/javascript" src="static/js/easing.js"></script>
 	<!-- here stars scrolling script -->
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -351,7 +348,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //scrolling script -->
 
 <!-- FlexSlider-JavaScript -->
-	<script defer th:src="@{/js/jquery.flexslider.js}"></script>
+	<script defer src="static/js/jquery.flexslider.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			SyntaxHighlighter.all();
@@ -368,7 +365,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //FlexSlider-JavaScript -->
 
 <!-- typer js--><!-- For banner text -->
-<script th:src='@{/js/jquery.typer.js}'></script>
+<script src='static/js/jquery.typer.js}'></script>
 	<script>
 						var win = $(window),
 							foo = $('#typer');
@@ -387,8 +384,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //typer js--><!-- //For banner text -->
 
 <!-- stats -->
-	<script th:src="@{/js/jquery.waypoints.min.js}"></script>
-	<script th:src="@{/js/jquery.countup.js}"></script>
+	<script src="static/js/jquery.waypoints.min.js"></script>
+	<script src="static/js/jquery.countup.js"></script>
 		<script>
 			$('.counter').countUp();
 		</script>
