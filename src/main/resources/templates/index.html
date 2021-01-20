@@ -1,167 +1,63 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index')}">>
 <head>
-<title>Baterias Roca | Home</title>
-<!-- custom-theme -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="baterias, batteries, mateo, prestolite, varta, automotor" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
-
-<!-- For Testimonials slider -->
-<link rel="stylesheet" th:href="@{/css/flexslider.css}" type="text/css" media="all" />
-<!-- //For Testimonials slider -->
-<!-- //custom-theme files-->
-<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css" media="all" />
-<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
-<!-- //custom-theme files-->
-
-<!-- font-awesome-icons -->
-<link th:href="@{/css/font-awesome.css}" rel="stylesheet">
-<!-- //font-awesome-icons -->
-<!-- googlefonts -->
-<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese" rel="stylesheet">
-<!-- //googlefonts -->
-
+	<meta charset="UTF-8">
+	<title>Bienvenido</title>
 </head>
+
 <body>
+<!-- Ventajas -->
+<div class="about">
+	<div class="container">
 
-<!-- banner -->
-<div class="banner">
-	<div class="banner-dott">
-		<!-- Top-Bar -->
-				<div class="top">
-					<div class="container">
+		<h2 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Bienvenido
+		</h2>
 
-							<div class="col-md-6 top-left">
-								<ul>
-									<li><i class="fa fa-mobile" aria-hidden="true"></i> (+54 9) 11 5049 8700</li>
-									<li><i class="fa fa-map-marker" aria-hidden="true"></i> Julio Argentino Roca 3820, Florida Oeste</li>
-								</ul>
-							</div>
-							<div class="col-md-6 top-middle">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-							<div class="clearfix"></div>
-
+		<div class="w3l-about-grids">
+			<div class="col-md-6 w3ls-about-left">
+				<div class="agileits-icon-grid">
+					<div class="icon-left hvr-radial-out">
+						<i class="fa fa-smile-o" aria-hidden="true"></i>
 					</div>
+					<div class="icon-right">
+						<h5>LA MEJOR ATENCIÓN, DESDE SIEMPRE</h5>
+						<p>Nuestra trayectoria es nuestra mejor carta de presentación.</p>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				<div class="top-bar">
-				<div class="container">
-					<div class="header">
-						<nav class="navbar navbar-default">
-						<h1><a class="navbar-brand" href="index.html">
-								<span class="navbar-brand">
-									<img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Baterías Roca
-								</span>
-							</a>
-						</h1>
-							<div class="navbar-header navbar-left">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"/>
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-							</div>
-							<!-- Collect the nav links, forms, and other content for toggling -->
-							<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
-								<nav class="cl-effect-15" id="cl-effect-15">
-									<ul class="nav navbar-nav">
-										<li class="active"><a href="index.html">Inicio</a></li>
-													<li><a href="about.html">Historia</a></li>
-													<li class="dropdown">
-														<a href="#" class="dropdown-toggle" data-hover="Nuestros Productos" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nuestros Productos <span class="caret"></span></a>
-														<ul class="dropdown-menu">
-															<li><a href="icons.html">Icons</a></li>
-															<li><a href="typography.html">Typography</a></li>
-														</ul>
-													</li>
-													<li><a href="gallery.html">Galería</a></li>
-													<li><a href="contact.html">Contacto</a></li>
-												</ul>
-
-								</nav>
-							</div>
-						</nav>
+				<div class="agileits-icon-grid">
+					<div class="icon-left hvr-radial-out">
+						<i class="fa fa-usd" aria-hidden="true"></i>
+					</div>
+					<div class="icon-right">
+						<h5>AMPLIA VARIEDAD, LOS MEJORES PRECIOS</h5>
+						<p>Trabajamos con las marcas más importantes de la industria.</p>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="agileits-icon-grid">
+					<div class="icon-left hvr-radial-out">
+						<i class="fa fa-globe" aria-hidden="true"></i>
+					</div>
+					<div class="icon-right">
+						<h5>ENVÍO A DOMICILIO</h5>
+						<p>Contamos con logística propia, para su comodidad.</p>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
 			</div>
+			<div class="col-md-6 w3ls-about-right">
+				<div class="w3ls-about-right-img">
+
+				</div>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
-		<!-- //Top-Bar -->
-		<!-- w3-banner -->
-			<div class="w3-banner">
-				<div id="typer"></div>
-					<p>Desde 1983, a su servicio.</p>
-			</div>
-
-		<!-- //w3-banner -->
 	</div>
 </div>
-<!-- //banner -->
-<!-- about -->
-	<div class="about">
-		<div class="container">
-
-			<h2 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Bienvenido
-			</h2>
-
-			<div class="w3l-about-grids">
-				<div class="col-md-6 w3ls-about-left">
-					<div class="agileits-icon-grid">
-						<div class="icon-left hvr-radial-out">
-							<i class="fa fa-smile-o" aria-hidden="true"></i>
-						</div>
-						<div class="icon-right">
-							<h5>LA MEJOR ATENCIÓN, DESDE SIEMPRE</h5>
-							<p>Nuestra trayectoria es nuestra mejor carta de presentación.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="agileits-icon-grid">
-						<div class="icon-left hvr-radial-out">
-							<i class="fa fa-usd" aria-hidden="true"></i>
-						</div>
-						<div class="icon-right">
-							<h5>AMPLIA VARIEDAD, LOS MEJORES PRECIOS</h5>
-							<p>Trabajamos con las marcas más importantes de la industria.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="agileits-icon-grid">
-						<div class="icon-left hvr-radial-out">
-							<i class="fa fa-globe" aria-hidden="true"></i>
-						</div>
-						<div class="icon-right">
-							<h5>ENVÍO A DOMICILIO</h5>
-							<p>Contamos con logística propia, para su comodidad.</p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="col-md-6 w3ls-about-right">
-					<div class="w3ls-about-right-img">
-
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!-- //about -->
-	<!-- counter -->
-	<div class="services-bottom stats services">
+<!-- //Ventajas -->
+<!-- Visitenos -->
+<div class="services-bottom stats services">
 	<div class="banner-dott1">
 		<div class="container">
 			<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Visítenos</h3>
@@ -171,237 +67,89 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="clearfix"> </div>
 		</div>
 	</div>
+</div>
+<!-- //Visitenos -->
+<!-- Marcas -->
+<div class="two-grids">
+	<div class="container">
+		<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Nuestras Marcas</h3>
+		<section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<img th:src="@{/images/mateo-logo.jpg}" alt="" />
+					</li>
+					<li>
+						<img th:src="@{/images/ACDelco-700.png}" alt="" />
+					</li>
+					<li>
+						<img th:src="@{/images/autobat-360.png}" alt="" />
+					</li>
+					<li>
+						<img th:src="@{/images/moura-300.png}" alt="" />
+					</li>
+					<li>
+						<img th:src="@{/images/willard-200.jpg}" alt="" />
+					</li>
+					<li>
+						<img th:src="@{/images/sermat-250.png}" alt="" />
+					</li>
+					<li>
+						<img th:src="@{/images/varta-2000.png}" alt="" />
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
-<!-- //counter -->
-	<!-- advantages -->
-	<div class="two-grids">
-		<div class="container">
-			<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Nuestras Marcas</h3>
-				<section class="slider">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-								<img th:src="@{/images/mateo-logo.jpg}" alt="" />
-							</li>
-							<li>
-								<img th:src="@{/images/ACDelco-700.png}" alt="" />
-							</li>
-							<li>
-								<img th:src="@{/images/autobat-360.png}" alt="" />
-							</li>
-							<li>
-								<img th:src="@{/images/moura-300.png}" alt="" />
-							</li>
-							<li>
-								<img th:src="@{/images/willard-200.jpg}" alt="" />
-							</li>
-							<li>
-								<img th:src="@{/images/sermat-250.png}" alt="" />
-							</li>
-							<li>
-								<img th:src="@{/images/varta-2000.png}" alt="" />
-							</li>
-						</ul>
-					</div>
-				</section>
-		</div>
-	</div>
-	<!-- //advantages -->
+</div>
+<!-- //Marcas -->
 
-<!-- Clients -->
+<!-- Ofertas -->
 <div class="offers">
 	<div class="banner-dott1">
-	<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Ofertas destacadas</h3>
+		<h3 class="w3l-titles"><img class="img-logo" th:src="@{/images/roca-logo.png}" alt=""/> | Ofertas destacadas</h3>
 		<div class="container">
 			<!-- <h4>What Our Customers Say</h4>
-			<section class="slider">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<img src="images/c1.jpg" alt="" />
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-								<div class="client">
-									<h5>Gerald Roy</h5>
-								</div>
-						</li>
-						<li>
-							<img src="images/c2.jpg" alt="" />
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-								<div class="client">
-									<h5>Adam Brandom</h5>
-								</div>
-						</li>
-						<li>
-							<img src="images/c3.jpg" alt="" />
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-								<div class="client">
-									<h5>Steve Artur</h5>
-								</div>
-						</li>
-						<li>
-							<img src="images/c4.jpg" alt="" />
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
-								<div class="client">
-									<h5>Martin Victor</h5>
-								</div>
-						</li>
-					</ul>
-				</div>
-			</section> -->
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/c1.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <div class="client">
+                                    <h5>Gerald Roy</h5>
+                                </div>
+                        </li>
+                        <li>
+                            <img src="images/c2.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <div class="client">
+                                    <h5>Adam Brandom</h5>
+                                </div>
+                        </li>
+                        <li>
+                            <img src="images/c3.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <div class="client">
+                                    <h5>Steve Artur</h5>
+                                </div>
+                        </li>
+                        <li>
+                            <img src="images/c4.jpg" alt="" />
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation .</p>
+                                <div class="client">
+                                    <h5>Martin Victor</h5>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+            </section> -->
 		</div>
 	</div>
 </div>
-<!-- //Clients -->
-<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="agileits_w3layouts_footer_grids">
-				<div class="col-md-4 agileits_w3layouts_footer_grid">
-					<h3>Contáctenos</h3>
-					<ul>
-						<li><span>Teléfono :</span> (+54 9) 11 5049 8700</li>
-					</ul>
-				</div>
-				<div class="col-md-4 agileits_w3layouts_footer_grid">
-					<h3>Dirección</h3>
-					<p>Julio Argentino Roca 3820, Florida Oeste. <i>Buenos Aires</i></p>
-				</div>
-				<div class="col-md-4 agileits_w3layouts_footer_grid">
-					<h3>Envíenos su pedido o consulta a:</h3>
-					<ul>
-						<li><span>Email :</span> <a href="mailto:bateriasroca.florida@gmail.com"> bateriasroca.florida@gmail.com</a></li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
+<!-- //Ofertas -->
 
-			<div class="agileits_w3layouts_footer_grids">
-				<div class="col-md-6 agileits_w3layouts_footer_grid">
-					<h3>Horario de atención:</h3>
-					<ul>
-						<li><span>Lun - Vie : </span> 7:30AM a 5:00PM</li>
-					</ul>
-				</div>
-				<div class="col-md-6 agileits_w3layouts_footer_grid">
-					<h3>Suscríbase para recibir ofertas y novedades:</h3>
-					<form id="emailForm" action="/submitEmail" method="POST">
-						<input type="email" name="email" placeholder="Email" required="">
-						<input type="submit" value="Enviar">
-					</form>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<div class="wthree_copy_right copyright">
-		<div class="container">
-			<div class="copyrighttop">
-				<ul>
-					<li><a class="facebook" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-					<li><a class="facebook" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a class="facebook" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-					<li><a class="facebook" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
-			<p>© 2018 Baterías Roca | Design by lazarvs.ar - using <a href="http://w3layouts.com/">w3l</a></p>
-		</div>
-	</div>
-<!-- //footer -->
-<!-- bootstrap-modal-pop-up -->
 
-<!-- //bootstrap-modal-pop-up -->
-<!-- js -->
-	<script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
-	<!-- for bootstrap working -->
-	<script th:src="@{/js/bootstrap.js}"></script>
-	<!-- //for bootstrap working -->
-<!-- //js -->
-<!-- //here starts scrolling icon -->
-<script th:src="@{/js/SmoothScroll.min.js}"></script>
-	<script type="text/javascript" th:src="@{/js/move-top.js}"></script>
-	<script type="text/javascript" th:src="@{/js/easing.js}"></script>
-	<!-- here stars scrolling script -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear'
-				};
-			*/
-
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-			});
-	</script>
-	<!-- //here ends scrolling script -->
-<!-- //here ends scrolling icon -->
-
-<!-- scrolling script -->
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script>
-<!-- //scrolling script -->
-
-<!-- FlexSlider-JavaScript -->
-	<script defer th:src="@{/js/jquery.flexslider.js}"></script>
-	<script type="text/javascript">
-		$(function(){
-			SyntaxHighlighter.all();
-				});
-				$(window).load(function(){
-				$('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-						$('body').removeClass('loading');
-					}
-			});
-		});
-	</script>
-<!-- //FlexSlider-JavaScript -->
-
-<!-- typer js--><!-- For banner text -->
-<script th:src='@{/js/jquery.typer.js}'></script>
-	<script>
-						var win = $(window),
-							foo = $('#typer');
-
-						foo.typer(['Baterías para todo tipo de automotores', 'Ventas por mayor y menor', 'La mejor atención y asesoramiento','Compromiso y responsabilidad']);
-
-						// unneeded...
-						win.resize(function(){
-							var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
-
-							foo.css({
-								fontSize: fontSize * .8 + 'px'
-							});
-						}).resize();
-					</script>
-<!-- //typer js--><!-- //For banner text -->
-
-<!-- stats -->
-	<script th:src="@{/js/jquery.waypoints.min.js}"></script>
-	<script th:src="@{/js/jquery.countup.js}"></script>
-		<script>
-			$('.counter').countUp();
-		</script>
-<!-- //stats -->
-
-<!-- alert on submission -->
-<script>
-	$('#emailForm').submit(function(event){
-			alert("Gracias por contactarse con nosotros!");
-	});
-
-</script>
-
-<!-- //alert on submission -->
 </body>
 </html>
+

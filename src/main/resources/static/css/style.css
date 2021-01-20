@@ -111,6 +111,20 @@ img{
     color: #ececec;
     border: 1px solid #527dbd;
 }
+
+.top-middle .fa-instagram {
+    font-size: 16px;
+    text-align: center;
+    line-height: 29px;
+    width: 30px;
+    height: 30px;
+}
+.top-middle .fa-instagram:hover {
+    background: #d24dbe;
+    color: #ececec;
+    border: 1px solid #d24dbe;
+}
+
 .top-middle .fa-twitter {
     font-size: 16px;
     text-align: center;

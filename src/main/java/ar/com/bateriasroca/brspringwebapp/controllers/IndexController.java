@@ -13,24 +13,17 @@ import java.util.Iterator;
 @Controller
 public class IndexController {
 
-    private OfferService offerService;
-
-    public IndexController(OfferService offerService){
-        this.offerService = offerService;
-    }
-
 
     @RequestMapping({"", "/", "/index.html"})
     public String getIndex(){
-
-        Iterator it = offerService.getAllOffers().iterator();
-
-        while(it.hasNext()){
-            System.out.println(it.next().toString());
-        }
-
         return "index";
     }
+
+    @RequestMapping("/about.html")
+    public String getAbout(){
+        return "about";
+    }
+
 
     @RequestMapping(method = RequestMethod.POST, path = {"/submitEmail"})
     public String submitEmail(@RequestParam(name = "email") String email){
